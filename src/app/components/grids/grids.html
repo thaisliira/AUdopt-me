@@ -1,0 +1,8 @@
+@for (item of content; track $index) {
+  <app-grid
+    [text]="item.text"
+    [imageUrl]="item.imageUrl"
+    [inverterOrdem]="$index % 2 !== 0">
+  </app-grid>
+}
+

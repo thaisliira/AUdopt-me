@@ -1,0 +1,21 @@
+<div class="p-5 text-center bg-body-tertiary">
+  <h1 class="mb-3">THEY ARE WAITING FOR YOU</h1>
+  <h4 class="mb-3">Find your new best friend among our rescued companions</h4>
+  <a class="btn btn-primary" href="#gallery" role="button">View Now</a>
+</div>
+
+<div class="container mx-auto px-4 mb-7" id="gallery">
+  <div class="row">
+    @for (animal of animals; track animal.id) {
+      <div class="col-6 col-md-3 mt-4">
+        <div class="overflow-hidden rounded-base shadow-sm hover:shadow-lg transition-shadow">
+          <img
+            [src]="animal.imageUrl"
+            class="w-100 aspect-square object-cover"
+            alt="Rescued animal"
+          >
+        </div>
+      </div>
+    }
+  </div>
+</div>

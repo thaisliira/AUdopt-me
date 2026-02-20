@@ -1,0 +1,15 @@
+<mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+  @for (slide of slides; track slide.id) {
+    <mdb-carousel-item>
+      <img
+        [src]="slide.imageUrl"
+        class="d-block w-100 img-fluid"
+        [alt]="slide.title"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ slide.title }}</h5>
+        <p>{{ slide.description }}</p>
+      </div>
+    </mdb-carousel-item>
+  }
+</mdb-carousel>

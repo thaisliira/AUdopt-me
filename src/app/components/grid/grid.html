@@ -1,0 +1,21 @@
+<div class="container my-5">
+  <div class="row align-items-center">
+    @if (!inverterOrdem) {
+      <div class="col-md-6">
+        <p style="white-space: pre-line;">{{ text }}</p>
+      </div>
+      <div class="col-md-6">
+        <img [src]="imageUrl" class="img-fluid" alt="Audi">
+      </div>
+    }
+    @else {
+      <div class="col-md-6">
+        <img [src]="imageUrl" class="img-fluid" alt="Audi">
+      </div>
+      <div class="col-md-6">
+        <!-- o pre line aceita a quebra de linha dada no arquivo -->
+        <p style="white-space: pre-line;">{{ text }}</p>
+      </div>
+    }
+  </div>
+</div>
