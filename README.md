@@ -1,63 +1,71 @@
-<<<<<<< HEAD
-# AUdopt-me
-=======
-# AdoptMe
+# 🐾✨ AUdopt-me
+> An educational animal adoption platform developed with Angular, focusing on creating a responsive Single Page Application (SPA).
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.16.
+---
 
-## Development server
+## 📌 Project Mission
+AUdopt-me was born from the belief that no animal should be left behind due to its breed or past. The project serves as a digital bridge between rescued animals and families looking for a new companion.
 
-To start a local development server, run:
+* Focused on mixed-breed pets and stories of resilience.
+* Clean, welcoming, and intuitive interface.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🧾 About the Project
+AUdopt-me is a web application that simulates a real-world adoption portal. The system leverages the Angular ecosystem to manage navigation and dynamic content display, ensuring a fluid experience without page reloads.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🏗️ Architecture and Technologies
+1. To ensure organization and web development best practices, the project was structured with:
 
-```bash
-ng generate component component-name
-```
+2. Angular Standalone Components: A modern architecture that eliminates the need for heavy NgModules.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Angular Routing: A routing system for seamless navigation between Home, Gallery, Blog, and Contact Us.
 
-```bash
-ng generate --help
-```
+4. Dynamic Pipes
 
-## Building
+---
 
-To build the project run:
+## ✅ Implemented Features
+### 📸 Animal Gallery
+Responsive grid (4 columns on desktop) with normalized images using CSS (aspect-square).
 
-```bash
-ng build
-```
+Clean cards displaying adoption candidates with essential details.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 📖 Stories Blog
+Dynamic article listing using the @for directive.
 
-## Running unit tests
+### ✉️ Contact 
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## ⟲ Features Under Development
+- [ ] Detailed individual profile pages for each animal.
+- [ ] ...
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🗂️ Project Structure
+The code is organized following standard Angular conventions:
 
-```bash
-ng e2e
-```
+* src/app/components: Reusable UI elements (Header, Footer).
+* src/app/pages: Main view components (Home, Gallery, Blog, Contact).
+* app.routes.ts: Definition of all SPA navigation paths.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+  ---
 
-## Additional Resources
+## ▶️ How to Run Locally
+Ensure you have Node.js and Angular CLI installed.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> be7a88f (initial commit)
+1. Clone the repository.
+
+2. Run npm install to install dependencies (recreates the node_modules folder).
+
+3. Run ng serve and navigate to http://localhost:4200/.
+
+---
+
+## ✍️ Author
+
+Developed by **Thais Lira**
