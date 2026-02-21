@@ -10,6 +10,13 @@ AUdopt-me was born from the belief that no animal should be left behind due to i
 * Clean, welcoming, and intuitive interface.
 
 ---
+## 🌐 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://thaisliira.github.io/AUdopt-me/)
+
+*Click the button above to see the project in action.*
+
+---
 
 ## 🧾 About the Project
 AUdopt-me is a web application that simulates a real-world adoption portal. The system leverages the Angular ecosystem to manage navigation and dynamic content display, ensuring a fluid experience without page reloads.
