@@ -1,15 +1,73 @@
-<mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
-  @for (slide of slides; track slide.id) {
-    <mdb-carousel-item>
-      <img
-        [src]="slide.imageUrl"
-        class="d-block w-100 img-fluid"
-        [alt]="slide.title"
-      />
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{ slide.title }}</h5>
-        <p>{{ slide.description }}</p>
+<section class="py-5" style="background-color: #fdfdfd;">
+  <div class="container py-lg-4"> <div class="row align-items-center">
+
+    <div class="col-lg-6 mb-5 mb-lg-0 text-start">
+      <h1 class="display-3 fw-bold mb-3" style="color: #333; letter-spacing: -1px;">
+        Transform a life, <br>
+        <span style="color: #a3c9b8;">AUdopt.</span>
+      </h1>
+      <p class="fs-5 text-muted mb-4 pe-lg-5" style="line-height: 1.6;">
+        Thousands of abandoned animals are waiting for a home full of love.
+        You can make a difference in their lives today.
+      </p>
+
+      <div class="d-flex flex-wrap gap-3 mb-5">
+        <button class="btn btn-lg px-4 fw-bold shadow-sm"
+                style="background-color: #ff8a65; color: white; border-radius: 30px; border: 2px solid #ff8a65;"
+                routerLink="/gallery">
+          See our team <i class="fas fa-paw ms-2"></i>
+        </button>
+
+        <button class="btn btn-lg px-4 fw-bold"
+                style="color: #ff8a65; border: 2px solid #ff8a65; border-radius: 30px; background: transparent;"
+                routerLink="/contact">
+          How to help?
+        </button>
       </div>
-    </mdb-carousel-item>
-  }
-</mdb-carousel>
+
+      <div class="d-flex gap-5 border-top pt-4">
+        <div class="d-flex align-items-center">
+          <div class="me-3 p-2 rounded-circle" style="background-color: #e8f5e9;">
+            <i class="fas fa-heart" style="color: #a3c9b8;"></i>
+          </div>
+          <div>
+            <h4 class="fw-bold m-0" style="color: #333;">120+</h4>
+            <small class="text-muted text-uppercase fw-bold" style="font-size: 0.7rem;">Adopted</small>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="me-3 p-2 rounded-circle" style="background-color: #fff3e0;">
+            <i class="fas fa-home" style="color: #ff8a65;"></i>
+          </div>
+          <div>
+            <h4 class="fw-bold m-0" style="color: #333;">348+</h4>
+            <small class="text-muted text-uppercase fw-bold" style="font-size: 0.7rem;">Happy Families</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card border-0 shadow-lg" style="border-radius: 40px; overflow: hidden; transform: rotate(2deg);">
+        <mdb-carousel [controls]="true" [indicators]="false" [animation]="'fade'">
+          @for (slide of slides; track slide.id) {
+            <mdb-carousel-item>
+              <img [src]="slide.imageUrl"
+                   class="d-block w-100"
+                   [alt]="slide.title"
+                   style="height: 450px; object-fit: cover;">
+
+              <div class="p-4 bg-white text-center">
+                <h5 class="fw-bold mb-1" style="color: #a3c9b8;">{{ slide.title }}</h5>
+                <p class="small text-muted m-0">{{ slide.description }}</p>
+              </div>
+            </mdb-carousel-item>
+          }
+        </mdb-carousel>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</section>

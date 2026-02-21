@@ -1,37 +1,47 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">AUdopt-me</a>
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm py-2"
+     style="background-color: #a3c9b8;">
+
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4 text-white" routerLink="/">
+      <img src="logo.png"
+           width="45"
+           height="45"
+           class="d-inline-block align-top me-2">
+      AUdopt-me
+    </a>
 
     <button
-      class="navbar-toggler"
+      class="navbar-toggler border-white text-white"
       type="button"
       (click)="inlineNav.toggle()"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
     >
       <i class="fas fa-bars"></i>
     </button>
 
-    <div
-      class="collapse navbar-collapse"
-      id="navbarText"
-      mdbCollapse
-      #inlineNav="mdbCollapse"
-    >
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+    <div class="collapse navbar-collapse" mdbCollapse #inlineNav="mdbCollapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item px-2">
+          <a class="nav-link text-white fw-medium" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/gallery" routerLinkActive="active">Gallery</a>
+        <li class="nav-item px-2">
+          <a class="nav-link text-white fw-medium" routerLink="/gallery" routerLinkActive="active-link">Gallery</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+        <li class="nav-item px-2">
+          <a class="nav-link text-white fw-medium" routerLink="/blog" routerLinkActive="active-link">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+        <li class="nav-item px-2">
+          <a class="nav-link text-white fw-medium" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
         </li>
       </ul>
+      <div class="d-flex align-items-center">
+        <button class="btn fw-bold px-4 py-2 shadow-sm"
+                style="background-color: #ff8a65; color: white; border-radius: 25px;"
+                routerLink="/contact">
+          Adopt Now
+        </button>
+      </div>
     </div>
   </div>
 </nav>
+
+<div style="height: 85px;"></div>

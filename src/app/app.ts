@@ -5,10 +5,11 @@ import {Carrousel} from './components/carrousel/carrousel';
 import {Cards} from './components/cards/cards';
 import {Grids} from './components/grids/grids';
 import {Footer} from './master-page/footer/footer';
+import {WorksFlow} from './components/works-flow/works-flow';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Carrousel, Cards, Grids, Footer],
+  imports: [RouterOutlet, Header, Carrousel, Cards, Grids, Footer, WorksFlow],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

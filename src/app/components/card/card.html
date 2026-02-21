@@ -1,8 +1,24 @@
-<div class="card">
-  <img [src]="imageUrl" class="card-img-top" [alt]="title"/>
-  <div class="card-body text-center">
-    <h5 class="card-title">{{title}}</h5>
-    <p class="card-text">{{description}}</p>
-    <a href="#" class="btn btn-primary">I want to know more</a>
+<div class="card border-0 shadow-sm h-100 mt-4"
+     style="border-radius: 30px; overflow: hidden; transition: transform 0.3s ease;">
+
+  <div style="height: 400px; overflow: hidden;">
+    <img [src]="imageUrl"
+         class="card-img-top h-100 w-100"
+         [alt]="title"
+         style="object-fit: cover;">
+  </div>
+
+  <div class="card-body text-center p-4">
+    <h5 class="card-title fw-bold mb-2" style="color: #333;">{{title}}</h5>
+
+    <p class="card-text text-muted small mb-4" style="line-height: 1.5;">
+      {{description}}
+    </p>
+
+    <button class="btn w-100 fw-bold py-2 shadow-sm"
+            style="background-color: #ff8a65; color: white; border-radius: 15px; border: none;"
+            routerLink="/gallery">
+      I want to know more
+    </button>
   </div>
 </div>

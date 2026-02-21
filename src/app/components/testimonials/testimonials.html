@@ -1,0 +1,20 @@
+<section class="py-5">
+  <div class="container text-center mb-4">
+    <h2 class="display-6 fw-bold mb-2" style="color: #333;">Love Stories</h2>
+    <p class="text-muted mb-5 fs-5">See what our adopters have to say about their life-changing experiences.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      @for (testimonial of testimonials; track testimonial.id) {
+        <div class="col-md-4 mb-4"> <app-testimonial
+          [adopter]="testimonial.adopter"
+          [imageUrl]="testimonial.imageUrl"
+          [message]="testimonial.message"
+          [petAdopted]="testimonial.petAdopted">
+        </app-testimonial>
+        </div>
+      }
+    </div>
+  </div>
+</section>
