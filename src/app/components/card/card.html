@@ -4,14 +4,15 @@
   <div style="height: 400px; overflow: hidden;">
     <img [src]="imageUrl"
          class="card-img-top h-100 w-100"
-         [alt]="title"
+         [alt]="name"
          style="object-fit: cover;">
   </div>
 
   <div class="card-body text-center p-4">
-    <h5 class="card-title fw-bold mb-2" style="color: #333;">{{title}}</h5>
+    <h5 class="card-title fw-bold mb-2" style="color: #333;">{{name}}</h5>
 
-    <p class="card-text text-muted small mb-4" style="line-height: 1.5;">
+    <p class="card-text text-muted small mb-4"
+       style="line-height: 1.5; text-align: justify;">
       {{description}}
     </p>
 

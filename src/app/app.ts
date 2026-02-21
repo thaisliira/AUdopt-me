@@ -9,7 +9,7 @@ import {WorksFlow} from './components/works-flow/works-flow';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Carrousel, Cards, Grids, Footer, WorksFlow],
+  imports: [RouterOutlet, Header, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

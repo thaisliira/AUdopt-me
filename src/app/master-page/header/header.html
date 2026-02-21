@@ -1,20 +1,11 @@
-<nav class="navbar navbar-expand-lg fixed-top shadow-sm py-2"
-     style="background-color: #a3c9b8;">
-
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm py-2" style="background-color: #a3c9b8;">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center fw-bold fs-4 text-white" routerLink="/">
-      <img src="logo.png"
-           width="45"
-           height="45"
-           class="d-inline-block align-top me-2">
+      <img src="logo.png" width="45" height="45" class="d-inline-block align-top me-2">
       AUdopt-me
     </a>
 
-    <button
-      class="navbar-toggler border-white text-white"
-      type="button"
-      (click)="inlineNav.toggle()"
-    >
+    <button class="navbar-toggler border-white text-white" type="button" (click)="inlineNav.toggle()">
       <i class="fas fa-bars"></i>
     </button>
 
@@ -24,15 +15,47 @@
           <a class="nav-link text-white fw-medium" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link text-white fw-medium" routerLink="/gallery" routerLinkActive="active-link">Gallery</a>
+          <a class="nav-link text-white fw-medium" routerLink="/gallery" routerLinkActive="active-link">Pets</a>
         </li>
-        <li class="nav-item px-2">
-          <a class="nav-link text-white fw-medium" routerLink="/blog" routerLinkActive="active-link">Blog</a>
+
+        <li class="nav-item dropdown px-2" mdbDropdown>
+          <a
+            class="nav-link dropdown-toggle text-white fw-medium"
+            role="button"
+            mdbDropdownToggle
+            style="cursor: pointer;">
+            Wanna Help?
+          </a>
+
+          <ul class="dropdown-menu border-0 shadow mt-2"
+              mdbDropdownMenu
+              style="border-radius: 20px; padding: 10px; min-width: 200px; background-color: #ffffff;">
+
+            <li>
+              <a class="dropdown-item py-2 px-3 fw-bold my-1"
+                 routerLink="/volunteering"
+                 routerLinkActive="active-link"
+                 style="border-radius: 12px; color: #666; transition: all 0.3s ease;">
+                Volunteering
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item py-2 px-3 fw-bold my-1"
+                 routerLink="/donations"
+                 routerLinkActive="active-link"
+                 style="border-radius: 12px; color: #666; transition: all 0.3s ease;">
+                Donations
+              </a>
+            </li>
+          </ul>
         </li>
+
         <li class="nav-item px-2">
           <a class="nav-link text-white fw-medium" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
         </li>
       </ul>
+
       <div class="d-flex align-items-center">
         <button class="btn fw-bold px-4 py-2 shadow-sm"
                 style="background-color: #ff8a65; color: white; border-radius: 25px;"

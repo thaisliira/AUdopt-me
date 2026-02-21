@@ -10,7 +10,6 @@ import {Testimonials} from '../../components/testimonials/testimonials';
   imports: [
     Carrousel,
     Cards,
-    Grids,
     WorksFlow,
     Testimonials
   ],

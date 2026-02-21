@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {MdbCarouselModule} from 'mdb-angular-ui-kit/carousel';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-carrousel',
   imports: [
-    MdbCarouselModule
+    MdbCarouselModule,
+    RouterLink
   ],
   templateUrl: './carrousel.html',
   styleUrl: './carrousel.scss',
