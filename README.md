@@ -69,12 +69,18 @@ This project leverages the Angular ecosystem to manage navigation and dynamic co
 The codebase is organized following standard Angular conventions, making it easy to navigate and scale:
 
 ```text
-AUdopt-me/
-└── src/
-    └── app/
-        ├── components/    # Reusable UI elements (e.g., Header, Footer)
-        ├── pages/         # Main view components (Home, Gallery, Blog, Contact)
-        └── app.routes.ts  # Definition of all SPA navigation paths
+src/
+├── app/
+│   ├── components/    # Reusable UI elements (e.g., Header, Footer)
+│   ├── homepage/      # Specific components and logic for the landing page
+│   ├── master-page/   # Main layout structure and structural wrappers
+│   ├── models/        # TypeScript interfaces and data models
+│   ├── pages/         # Core view components (Gallery, Blog, Contact)
+│   ├── app.config.ts  # Angular application configuration
+│   └── app.routes.ts  # Definition of all SPA navigation paths
+├── index.html         # Main entry HTML file
+├── main.ts            # Application bootstrap entry point
+└── styles.scss        # Global stylesheet
 ```
 
 ---
