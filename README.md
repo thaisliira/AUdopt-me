@@ -1,5 +1,6 @@
 <div align="center">
-  </div>
+  <img src="public/banner_chiu.png" alt="Pikachu Tech Banner" width="100%" />
+</div>
 
 <div align="center">
   <h1>🐾✨ AUdopt-me</h1>
