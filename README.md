@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/banner_chiu.png" alt="Pikachu Tech Banner" width="100%" />
+  <img src="public/banner_chiu2.gif" alt="Chihuahua Tech Banner" width="100%" />
 </div>
 
 <div align="center">
