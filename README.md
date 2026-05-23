@@ -39,13 +39,6 @@
 
 ---
 
-## <a id="preview"></a>📽 Preview
-
-<div align="center">
-  </div>
-
----
-
 ## <a id="description"></a>🎮 Description
 
 **AUdopt-me** is a web application that simulates a real-world adoption portal. It was born from the belief that no animal should be left behind due to its breed or past. The project serves as a digital bridge between rescued animals and families looking for a new companion.
