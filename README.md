@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/banner_chiu2.gif" alt="Chihuahua Tech Banner" width="100%" />
+  <img src="public/banner_chiu2.gif" alt="Chihuahua Tech Banner" width="90%" />
 </div>
 
 <div align="center">
